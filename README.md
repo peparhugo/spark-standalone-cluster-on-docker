@@ -32,14 +32,19 @@ sh take-home-assignment/bin/undeploy.sh
 
 ## Development
 
-Once the docker containers are deployed, you can go to [JupyterLab](http://0.0.0.0:8888/lab?) to develop in Python, Scala or R. I 
-used jupyter notebooks to iteratively develop the scripts for the assigment.
+Once the docker containers are deployed, you can go to [JupyterLab](http://0.0.0.0:8888/lab?) to develop in Python, 
+Scala or R. I used jupyter notebooks to iteratively develop the scripts for the assigment.
 
 ## Pipeline Scripts
 
 These files are saved in the `take-home-assignment/scripts` directory.
 
 ## Running Pipeline Scripts
+
+Pipeline scripts are run by sending docker exec commands to the `jupyterlab` container. This is fine for a local 
+development but in a production environment the scripts should be run using `./bin/spark-submit`. For ease of not over 
+building the solution of the assigment, I left it to run the spark job via the `jupyterlab` container.
+
 
 To launch pipeline scripts, run from the project root directory:
 ```
