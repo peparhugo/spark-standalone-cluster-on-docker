@@ -319,6 +319,7 @@ spark-warehouse/
 
 # Take home assignment
 /take-home-assignment/data/*
+!/take-home-assignment/data/.gitkeep
 
 
 # End of https://www.toptal.com/developers/gitignore/api/spark,jupyternotebooks,pycharm,pycharm+iml,pycharm+all
