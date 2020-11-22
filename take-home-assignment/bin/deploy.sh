@@ -1,2 +1,2 @@
 #!/bin/bash
-docker-compose up
+docker-compose up --scale spark-worker=2
