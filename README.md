@@ -14,7 +14,7 @@ the deployment with two explicit workers.
     │   ├── scripts      # source script files
     |   |   ├── helpers     # helper functions
     |   |   ├── notebooks   # development notebooks
-    │   └── tests         # tests
+    │   └── tests        # tests
     └── ...
 
 
