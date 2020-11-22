@@ -1,25 +1,61 @@
 # Take Home Assignment
 
 This repo is a clone of this [repo](https://github.com/cluster-apps-on-docker/spark-standalone-cluster-on-docker) and 
-was selected because it runs a Spark Standalone cluster on Docker. The docker-compose file explicilty runs two 
-spark worker nodes. Ideally, the solution would be scalable and dynamic but for the purposes of the assigment I left 
-the deployment with two explicit workers.
+was selected because it runs a Spark Standalone cluster on Docker.
 
-## Assigment Directory Structure
+## Assignment Directory Structure
     .
     ├── ...
-    ├── take-home-assigment                    # Test files (alternatively `spec` or `tests`)
+    ├── take-home-assigment  # assignment directory
     │   ├── bin          # shell scripts to run jobs
     │   ├── data         # storage for data files
     │   ├── scripts      # source script files
-    |   |   ├── helpers     # helper functions
+    |   |   ├── helpers     # helper functions (there may be no helper functions depending on the assignment)
     |   |   ├── notebooks   # development notebooks
-    │   └── tests        # tests
+    │   └── tests        # tests (there may be no tests depending on length of the assignment)
     └── ...
 
+## Deploying and Un-deploying
+
+To deploy the docker containers, run from the project root directory:
+```
+sh take-home-assignment/bin/deploy.sh
+```
+This deployment script will launch a spark cluster with 2 worker nodes. Ideally, the deployment script would take
+a scale argument and would be able to deploy more than one configuration but I felt this wsas outside the scope of the 
+assigment.
+
+To un-deploy the docker containers, run from the project root directory:
+```
+sh take-home-assignment/bin/undeploy.sh
+```
+
+## Development
+
+Once the docker containers are deployed, you can go to [JupyterLab](http://0.0.0.0:8888/lab?) to develop in Python, Scala or R. I 
+used jupyter notebooks to iteratively develop the scripts for the assigment.
+
+## Pipeline Scripts
+
+These files are saved in the `take-home-assignment/scripts` directory.
+
+## Running Pipeline Scripts
+
+To launch pipeline scripts, run from the project root directory:
+```
+sh take-home-assignment/bin/<run script name>.sh
+```
+
+Example:
+
+To run the example pipeline provided, run the following from the project root directory:
+```
+sh take-home-assignment/bin/run-example.sh
+```
 
 
-
+### End of assignment
+#
 # Original Read Me
 # Apache Spark Standalone Cluster on Docker
 
