@@ -3,6 +3,7 @@
 This repo is a clone of this [repo](https://github.com/cluster-apps-on-docker/spark-standalone-cluster-on-docker) and 
 was selected because it runs a Spark Standalone cluster on Docker.
 
+
 ## Assignment Directory Structure
     .
     ├── ...
@@ -34,6 +35,8 @@ sh take-home-assignment/bin/undeploy.sh
 
 Once the docker containers are deployed, you can go to [JupyterLab](http://0.0.0.0:8888/lab?) to develop in Python, 
 Scala or R. I used jupyter notebooks to iteratively develop the scripts for the assigment.
+
+See take-home-assignment/scripts/notebooks/de-weather-challenge-20200903.ipynb
 
 ## Pipeline Scripts
 
