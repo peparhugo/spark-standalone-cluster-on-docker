@@ -1,3 +1,26 @@
+# Take Home Assignment
+
+This repo is a clone of this [repo](https://github.com/cluster-apps-on-docker/spark-standalone-cluster-on-docker) and 
+was selected because it runs a Spark Standalone cluster on Docker. The docker-compose file explicilty runs two 
+spark worker nodes. Ideally, the solution would be scalable and dynamic but for the purposes of the assigment I left 
+the deployment with two explicit workers.
+
+## Assigment Directory Structure
+    .
+    ├── ...
+    ├── take-home-assigment                    # Test files (alternatively `spec` or `tests`)
+    │   ├── bin          # shell scripts to run jobs
+    │   ├── data         # storage for data files
+    │   ├── scripts      # source script files
+    |   |   ├── helpers     # helper functions
+    |   |   ├── notebooks   # development notebooks
+    │   └── tests         # tests
+    └── ...
+
+
+
+
+# Original Read Me
 # Apache Spark Standalone Cluster on Docker
 
 > The project just got its [own article](https://towardsdatascience.com/apache-spark-cluster-on-docker-ft-a-juyterlab-interface-418383c95445) at Towards Data Science Medium blog! :sparkles:
