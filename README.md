@@ -22,7 +22,7 @@ To deploy the docker containers, run from the project root directory:
 sh take-home-assignment/bin/deploy.sh
 ```
 This deployment script will launch a spark cluster with 2 worker nodes. Ideally, the deployment script would take
-a scale argument and would be able to deploy more than one configuration but I felt this wsas outside the scope of the 
+a scale argument and would be able to deploy more than one configuration but I felt this was outside the scope of the 
 assigment.
 
 To un-deploy the docker containers, run from the project root directory:
