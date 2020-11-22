@@ -24,6 +24,7 @@ services:
       - 7077:7077
     volumes:
       - shared-workspace:/opt/workspace
+      - ./take-home-assignment/:/opt/workspace/take-home-assignment/
   spark-worker:
     image: andreper/spark-worker:2.4.4-hadoop-2.7
     environment:
@@ -34,5 +35,6 @@ services:
       - SPARK_EXECUTOR_MEMORY=256m
     volumes:
       - shared-workspace:/opt/workspace
+      - ./take-home-assignment/:/opt/workspace/take-home-assignment/
     depends_on:
       - spark-master
