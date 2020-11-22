@@ -317,5 +317,8 @@ spark-warehouse/
 # For SBT
 .jvmopts
 
+# Take home assignment
+/take-home-assignment/data/*
+
 
 # End of https://www.toptal.com/developers/gitignore/api/spark,jupyternotebooks,pycharm,pycharm+iml,pycharm+all
