@@ -15,6 +15,7 @@ services:
       - 8888:8888
     volumes:
       - shared-workspace:/opt/workspace
+      - ./take-home-assignment/:/opt/workspace/take-home-assignment/
   spark-master:
     image: andreper/spark-master:2.4.4-hadoop-2.7
     container_name: spark-master
